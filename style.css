@@ -147,19 +147,19 @@ button {
 }
 
 .info-1 {
-	background-image: url(/images/about.jpg);
+	background-image: url(images/about.jpg);
 }
 
 .info-2 {
-	background-image: url(/images/projects.jpg);
+	background-image: url(images/projects.jpg);
 }
 
 .info-3 {
-	background-image: url(/images/blog.jpg);
+	background-image: url(images/blog.jpg);
 }
 
 .info-4 {
-	background-image: url(/images/contact.jpg);
+	background-image: url(images/contact.jpg);
 }
 
 .info-img {
