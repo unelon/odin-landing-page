@@ -120,8 +120,6 @@ button {
 	text-transform: uppercase;
 }
 
-.information {}
-
 .information-inner {
 	display: flex;
 	justify-content: space-between;
