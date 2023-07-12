@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -14,6 +18,11 @@ p {
 
 img {
 	border-radius: 40px;
+}
+
+a {
+	text-decoration: none;
+	color: var(--accent3);
 }
 
 :root {
@@ -111,6 +120,87 @@ button {
 	text-transform: uppercase;
 }
 
+.information {}
+
+.information-inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.info-container {
+	border: 1px solid #eaeaea;
+	height: 300px;
+	width: 100%;
+	border-radius: 20px;
+	margin-right: 20px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--accent3);
+	overflow: hidden;
+}
+
+.info-container:last-child {
+	margin-right: 0;
+	position: relative;
+	display: flex; 
+	align-items: center;
+}
+
+.info-1 {
+	background-image: url(/images/about.jpg);
+}
+
+.info-2 {
+	background-image: url(/images/projects.jpg);
+}
+
+.info-3 {
+	background-image: url(/images/blog.jpg);
+}
+
+.info-4 {
+	background-image: url(/images/contact.jpg);
+}
+
+.info-img {
+	filter: saturate(0);
+	width: 100%;
+	height: 100%;
+	opacity: 0.3;
+	background-position: center;
+}
+
+.info-img:hover {
+	filter: saturate(1);
+	opacity: 0.6;
+}
+
+.info-text {
+	font-size: 20px;
+	font-weight: bold;
+	position: absolute;
+	width: 100%;
+	pointer-events: none;
+
+}
+
+.quote {
+	background-color: var(--accent1);
+	color: #fff;
+	text-align: center;
+}
+
+.contact-inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--accent3);
+	color: #fff;
+	border-radius: 20px;
+}
+
 /* Responsive */
 
 @media only screen and (max-width: 990px) {
@@ -127,4 +217,30 @@ button {
 	div {
 		text-align: center;
 	}
+
+	.information-inner {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+
+	.info-container {
+		margin-top: 10px;
+	}
+
+	.hero-inner {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+}
+
+@media only screen and (max-width: 990px) {
+	.contact-inner {
+		flex-direction: column;
+	}
+
+	.contact-inner button {
+		margin-top: 30px
+	}
+
 }
